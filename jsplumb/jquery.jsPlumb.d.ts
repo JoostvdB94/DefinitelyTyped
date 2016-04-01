@@ -1,6 +1,6 @@
 ﻿// Compiled using typings@0.6.8
 // Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/56295f5058cac7ae458540423c50ac2dcf9fc711/jsplumb/jquery.jsPlumb.d.ts
-// Type definitions for jsPlumb 2.0.7 jQuery adapter
+// Type definitions for jsPlumb 2.0.7 jQuery adapter (WIP)
 // Project: http://jsplumb.org
 // Definitions by: Steve Shearn <https://github.com/shearnie/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
