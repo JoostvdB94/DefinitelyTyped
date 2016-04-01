@@ -1,13 +1,15 @@
-﻿// Type definitions for jsPlumb 1.3.16 jQuery adapter
+﻿// Compiled using typings@0.6.8
+// Source: https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/56295f5058cac7ae458540423c50ac2dcf9fc711/jsplumb/jquery.jsPlumb.d.ts
+// Type definitions for jsPlumb 2.0.7 jQuery adapter
 // Project: http://jsplumb.org
 // Definitions by: Steve Shearn <https://github.com/shearnie/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference path="../jquery/jquery.d.ts"/>
 
 declare var jsPlumb: jsPlumbInstance;
 
 interface jsPlumbInstance {
+    setContainer(domelement: any);
 	setRenderMode(renderMode: string): string;
 	bind(event: string, callback: (e) => void ): void;
 	unbind(event?: string): void;
@@ -16,7 +18,7 @@ interface jsPlumbInstance {
 	Defaults: Defaults;
 	restoreDefaults(): void;
 	addClass(el: any, clazz: string): void;
-	addEndpoint(ep: string): any;
+	addEndpoint(elem:any, options:any): any;
 	removeClass(el: any, clazz: string): void;
 	hasClass(el: any, clazz: string): void;
     	draggable(el: string, options?: DragOptions): jsPlumbInstance;
@@ -45,7 +47,8 @@ interface jsPlumbInstance {
 }
 
 interface Defaults {
-	Endpoint?: any[];
+    Endpoint?: any[];
+    Anchors: [any, any];
 	PaintStyle?: PaintStyle;
 	HoverPaintStyle?: PaintStyle;
 	ConnectionsDetachable?: boolean;
@@ -94,10 +97,10 @@ interface DragOptions {
 }
 
 interface SourceOptions {
-	parent: string;
-	endpoint?: string;
+	endpoint?: any[];
 	anchor?: string;
-	connector?: any[];
+    connector?: any[];
+    maxConnections: number;
 	connectorStyle?: PaintStyle;
 }
 
