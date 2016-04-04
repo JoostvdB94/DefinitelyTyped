@@ -48,7 +48,7 @@ interface jsPlumbInstance {
 
 interface Defaults {
     Endpoint?: any[];
-    Anchors: [any, any];
+    Anchors?: [any, any];
 	PaintStyle?: PaintStyle;
 	HoverPaintStyle?: PaintStyle;
     EndpointHoverStyle: PaintStyle;
