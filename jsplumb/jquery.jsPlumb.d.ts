@@ -11,7 +11,7 @@ declare var jsPlumb: jsPlumbInstance;
 interface jsPlumbInstance {
     setContainer(domelement: any);
 	setRenderMode(renderMode: string): string;
-	bind(event: string, callback: (e) => void ): void;
+	bind(event: string, callback: (obj:any, callback:() => void) => void ): void;
 	unbind(event?: string): void;
 	ready(callback: () => void): void;
 	importDefaults(defaults: Defaults): void;
