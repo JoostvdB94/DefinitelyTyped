@@ -60,9 +60,9 @@ interface Defaults {
 }
 
 interface PaintStyle {
-	strokeStyle: string;
-	lineWidth: number;
-    fillStyle:string;
+	strokeStyle?: string;
+	lineWidth?: number;
+    fillStyle?:string;
 }
 
 interface ArrowOverlay {
