@@ -13,6 +13,7 @@ interface jsPlumbInstance {
 	setRenderMode(renderMode: string): string;
 	bind(event: string, callback: (obj:any, callback:() => void) => void ): void;
 	unbind(event?: string): void;
+    detach(connection:any);
 	ready(callback: () => void): void;
 	importDefaults(defaults: Defaults): void;
 	Defaults: Defaults;
