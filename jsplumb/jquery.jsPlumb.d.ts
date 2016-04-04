@@ -62,7 +62,7 @@ interface Defaults {
 interface PaintStyle {
 	strokeStyle?: string;
 	lineWidth?: number;
-    fillStyle?:string;
+    fillStyle?: string;
 }
 
 interface ArrowOverlay {
