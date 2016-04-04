@@ -51,6 +51,7 @@ interface Defaults {
     Anchors: [any, any];
 	PaintStyle?: PaintStyle;
 	HoverPaintStyle?: PaintStyle;
+    EndpointHoverStyle: PaintStyle;
 	ConnectionsDetachable?: boolean;
 	ReattachConnections?: boolean;
 	ConnectionOverlays?: any[][];
