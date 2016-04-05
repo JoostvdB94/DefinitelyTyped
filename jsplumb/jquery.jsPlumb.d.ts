@@ -90,10 +90,11 @@ interface ConnectParams {
     target?: any; // string, element or endpoint
 	detachable?: boolean;
 	deleteEndpointsOnDetach?: boolean;
-	endPoint?: string;
+	endpoints:string[];
 	anchor?: string;
 	anchors?: any[];
 	label?: string;
+    endpointStyle?: PaintStyle;
 }
 
 interface DragOptions {
