@@ -95,6 +95,7 @@ interface ConnectParams {
 	anchors?: any[];
 	label?: string;
     endpointStyle?: PaintStyle;
+    paintStyle?: PaintStyle;
 }
 
 interface DragOptions {
