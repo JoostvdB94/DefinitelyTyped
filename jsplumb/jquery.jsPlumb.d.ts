@@ -39,6 +39,7 @@ interface jsPlumbInstance {
     	repaint(el: string): jsPlumbInstance;
     	repaint(el: Element): jsPlumbInstance;
     	getInstance(): jsPlumbInstance;
+    setSuspendDrawing(suspended:boolean, repaintAfterwards?:boolean)
 	getInstance(defaults: Defaults): jsPlumbInstance;
 	getInstanceIndex(): number;
 	
