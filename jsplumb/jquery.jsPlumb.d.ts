@@ -90,7 +90,7 @@ interface ConnectParams {
     target?: any; // string, element or endpoint
 	detachable?: boolean;
 	deleteEndpointsOnDetach?: boolean;
-	endpoints:string[];
+	endpoints?:string[];
 	anchor?: string;
 	anchors?: any[];
 	label?: string;
