@@ -59,6 +59,7 @@ interface Defaults {
 	ConnectionOverlays?: any[][];
     Container?: any; // string(selector or id) or element
     DragOptions?: DragOptions;
+    Connector: [string,any];
 }
 
 interface PaintStyle {
