@@ -97,6 +97,7 @@ interface ConnectParams {
 	label?: string;
     endpointStyle?: PaintStyle;
     paintStyle?: PaintStyle;
+    scope?:string[] | string;
 }
 
 interface DragOptions {
