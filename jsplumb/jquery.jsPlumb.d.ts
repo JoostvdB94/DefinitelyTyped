@@ -11,7 +11,7 @@ declare var jsPlumb: jsPlumbInstance;
 interface jsPlumbInstance {
     setContainer(domelement: any);
 	setRenderMode(renderMode: string): string;
-	bind(event: string, callback: (obj:any, event:Event) => void ): void;
+	bind(event: string, callback: (obj:any, event:MouseEvent) => void ): void;
 	unbind(event?: string): void;
     detach(connection:any);
 	ready(callback: () => void): void;
