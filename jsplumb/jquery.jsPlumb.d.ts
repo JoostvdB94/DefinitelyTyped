@@ -66,6 +66,7 @@ interface PaintStyle {
 	strokeStyle?: string;
 	lineWidth?: number;
     fillStyle?: string;
+    stroke-dasharray?: number[];
 }
 
 interface ArrowOverlay {
