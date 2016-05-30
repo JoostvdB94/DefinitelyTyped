@@ -138,6 +138,8 @@ interface Connection {
     setDetachable(detachable: boolean): void;
     setParameter<T>(name: string, value: T): void;
     endpoints: Endpoint[];
+    setPaintSyle(paintStyle:PaintStyle);
+    setHoverPaintSyle(paintStyle:PaintStyle);
 }
 
 interface Endpoint {
