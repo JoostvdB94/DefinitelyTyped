@@ -84,7 +84,7 @@ interface LabelOverlay {
 
 interface Connections {
 	detach(): void;
-    each(callback:(connection:Connection) => Connections);
+    each(callback:(connection:Connection) => void);
 	length: number;
 }
 
