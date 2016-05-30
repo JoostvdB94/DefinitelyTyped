@@ -129,8 +129,8 @@ interface DropOptions {
 
 interface SelectParams {
 	scope?: string;
-	source: string;
-	target: string;
+	source?: string;
+	target?: string;
 }
 
 interface Connection {
