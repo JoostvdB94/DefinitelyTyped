@@ -42,6 +42,7 @@ interface jsPlumbInstance {
     setSuspendDrawing(suspended:boolean, repaintAfterwards?:boolean)
 	getInstance(defaults: Defaults): jsPlumbInstance;
 	getInstanceIndex(): number;
+    getAllConnections(): any[];
 	
     SVG: string;
     CANVAS: string;
