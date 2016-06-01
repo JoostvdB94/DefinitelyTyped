@@ -105,6 +105,8 @@ interface ConnectParams {
 
 interface DragOptions {
 	containment?: string;
+    cursor?:string,
+    zIndex?:number
 }
 
 interface SourceOptions {
